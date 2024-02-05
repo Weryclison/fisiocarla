@@ -1,0 +1,38 @@
+.servicos-bg {
+  background-color: var(--azul);
+}
+.servicos {
+  padding-bottom: 60px;
+  margin-bottom: 60px;
+}
+.servicos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+}
+.servicos h1 {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.caixa-servicos {
+  text-align: center;
+}
+.caixa-servicos h2 {
+  padding-top: 28px;
+  padding-bottom: 12px;
+}
+@media (max-width: 980px) {
+  .servicos-grid {
+    grid-template-columns: 1fr;
+  }
+  .caixa-servicos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .servicos {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+}

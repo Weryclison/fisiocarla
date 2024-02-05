@@ -1,0 +1,39 @@
+.contato {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+.contato-conteudo ul li {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+.contato-conteudo h1 {
+  margin-bottom: 40px;
+}
+@media (max-width: 940px) {
+  .contato {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+  }
+  .contato-imagem {
+    order: 2;
+    display: flex;
+    justify-content: center;
+  }
+  .contato-conteudo ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 460px) {
+  .contato {
+    text-align: left;
+  }
+  .contato-conteudo ul {
+    align-items: initial;
+  }
+}
